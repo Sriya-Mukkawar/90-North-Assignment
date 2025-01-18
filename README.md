@@ -15,7 +15,7 @@ This project is a full-stack application with a Django backend and a React front
 It's recommended to use a virtual environment to manage your Python dependencies:
 python3 -m venv venv
 
-# Step 2: Create a Virtual Environment
+## Step 2: Create a Virtual Environment
 It's recommended to use a virtual environment to manage your Python dependencies:
 bash:
 python3 -m venv venv
