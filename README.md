@@ -17,49 +17,49 @@ python3 -m venv venv
 
 # Step 2: Create a Virtual Environment
 It's recommended to use a virtual environment to manage your Python dependencies:
-# bash
+bash:
 python3 -m venv venv
 
 ## Step 3: Activate the Virtual Environment
-# On Windows:
+On Windows:
 venv\Scripts\activate
 
-# On macOS/Linux:
+On macOS/Linux:
 source venv/bin/activate
 
 ## Step 4: Install Dependencies
 If you have a requirements.txt file, run:
-# bash
+bash:
 pip install -r requirements.txt
 
 ## Step 5: Set Up Database
 Make sure to apply migrations to set up your database:
-# bash
+bash:
 python manage.py migrate
 
 ## Step 6: Run the Django Development Server
 Start the Django server:
-# bash
+bash:
 python manage.py runserver
 Your backend should now be running at http://127.0.0.1:8000/.
 
 ### Frontend Setup (React)
 ## Step 1: Clone the Frontend Repository
 If you haven't already, clone the frontend repository to your local machine:
-# bash
+bash:
 git clone <frontend-repository-url>
 cd <frontend-folder>
 
 ## Step 2: Install Node.js and NPM
 Make sure you have Node.js and npm installed on your machine. You can download Node.js from here.
 After installing Node.js, verify the installation by running:
-# bash
+bash:
 node -v
 npm -v
 
 ## Step 3: Install Frontend Dependencies
 Inside the frontend folder, run the following command to install the required dependencies:
-# bash
+bash:
 npm install
 
 ## Step 4: Configure API URL
@@ -67,6 +67,6 @@ Ensure that your frontend is pointing to the correct backend URL. You may need t
 
 ## Step 5: Run the React Development Server
 Start the React development server:
-# bash
+bash:
 npm start
 Your frontend should now be running at http://localhost:3000/.
