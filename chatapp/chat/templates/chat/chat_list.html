@@ -1,0 +1,27 @@
+<!-- chat/templates/chat/chat_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat List</title>
+</head>
+<body>
+    <div class="chat-list">
+        <button onclick="toggleChatList()">Toggle Chat List</button>
+        <div id="chat-list" style="display: none;">
+            <ul>
+                {% for user in users %}
+                    <li><a href="{% url 'chat_room' user.username %}">{{ user.username }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleChatList() {
+            const chatList = document.getElementById('chat-list');
+            chatList.style.display = chatList.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
